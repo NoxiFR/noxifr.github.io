@@ -1,0 +1,17 @@
+div {
+    &.ndc {
+        z-index: 95;
+        background-image: url(../Images/ndcBack.png);
+        background-color: rgb(8, 6, 11);
+    }
+
+    &.ndc1 {
+        z-index: 94;
+        background-color: rgb(8, 6, 11);
+    }
+}
+
+img.ndc {
+    float: left;
+    margin: 0 30px 10px 0;
+}

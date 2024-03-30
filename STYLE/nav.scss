@@ -1,0 +1,153 @@
+nav {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+    border: 10px solid transparent;
+    background-clip: padding-box;
+    width: 75px;
+    border-radius: 60px;
+    padding: 15px 0;
+    position: fixed;
+<<<<<<< HEAD
+    top: 50%;left: -50px;
+    transform: translateY(-50%);
+=======
+    top: 25%;
+    left: -50px;
+>>>>>>> 5ad708bdca095b3e020d943d5e24b9dc06fece0d
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    opacity: 70%;
+    transition: 0.3s;
+    z-index: 99;
+
+    &:hover {
+        opacity: 1;
+        transform: translateX(50px) translateY(-50%);
+    }
+
+    a {
+        width: 80%;
+        margin: auto;
+        position: relative;
+
+        &::before {
+            content: "|";
+            white-space: nowrap;
+            background-color: rgba(255, 255, 255, 0.3);
+            opacity: 1;
+            backdrop-filter: blur(1px);
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            position: absolute;
+<<<<<<< HEAD
+            top: 50%;left: 80px;
+            transform: translateY(-50%) translateX(-50%);
+            transition: 0.3s;
+            opacity: 0;
+            transform-origin: left;
+        }
+
+        &:hover:before{
+            opacity: 1;
+            transform: translateY(-50%) translateX(0);
+=======
+            top: 30%;
+            left: 80px;
+            transition: 0.25s;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        &:hover:before {
+            transform: scaleX(1);
+>>>>>>> 5ad708bdca095b3e020d943d5e24b9dc06fece0d
+        }
+
+        &.home:before {
+            content: "Accueil";
+        }
+
+        &.space:before {
+            content: "Space Invader";
+        }
+
+        &.imb:before {
+            content: "Site IMB";
+        }
+
+        &.ndc:before {
+            content: "Nuit Du Code";
+        }
+
+        &.portfolio:before {
+            content: "Portfolio";
+        }
+
+        &.contact:before {
+            content: "Contact";
+        }
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        transition: 0.3s;
+        margin: auto;
+
+        &:hover {
+            transform: translateX(2px);
+        }
+    }
+}
+
+@media screen and (max-height:550px) {
+    nav {
+        flex-direction: row;
+        padding: 0 15px;
+        width: auto;
+        height: 65px;
+        top: 5%;
+        left: 5%;
+        opacity: 1;
+
+        &:hover {
+            transform: none;
+        }
+
+        img {
+            width: auto;
+            height: 65px;
+
+            &:hover {
+                transform: translateY(2px);
+            }
+        }
+
+        a {
+<<<<<<< HEAD
+            &::before{
+                top: 120%;left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+=======
+            &::before {
+                top: 50%;
+                left: -20%;
+>>>>>>> 5ad708bdca095b3e020d943d5e24b9dc06fece0d
+                transition: 0.3s;
+                opacity: 0;
+                transform-origin: top;
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 1;
+                    transform: translateY(0) translateX(-50%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+div {
+    &.pro {
+        box-shadow: 0 1px 2px;
+        background-color: rgb(8, 6, 11);
+        background-repeat: repeat;
+    }
+
+    &.frise {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        justify-items: center;
+
+        img {
+            align-self: center;
+        }
+
+        div {
+            box-shadow: none;
+            padding: 0;
+
+            &.circlePseudo {
+                width: auto;
+                height: 100%;
+                grid-column-start: 2;
+                position: relative;
+                overflow: hidden;
+                align-self: center;
+            }
+
+            &.circle {
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                background-color: rgba(220, 220, 220);
+                overflow: hidden;
+                padding-bottom: auto;
+            }
+
+            &.line {
+                grid-column-start: 2;
+                width: 5px;
+                height: 100%;
+                min-height: 70px;
+                background-color: rgba(220, 220, 220);
+
+                &.complete {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            &.desc {
+                width: 100%;
+
+                h2 {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 20px;
+                    text-shadow: none;
+                }
+
+                &.r {
+                    h2 {
+                        text-align: right;
+                    }
+
+                    grid-column-start: 1;
+
+                }
+
+                &.g {
+                    h2 {
+                        text-align: left;
+                    }
+
+                    grid-column-start: 3;
+                }
+            }
+        }
+    }
+}
+
+img.ordi {
+    float: right;
+    margin: 0 0 10px 30px;
+}
