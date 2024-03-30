@@ -7,13 +7,8 @@ nav {
     border-radius: 60px;
     padding: 15px 0;
     position: fixed;
-<<<<<<< HEAD
     top: 50%;left: -50px;
     transform: translateY(-50%);
-=======
-    top: 25%;
-    left: -50px;
->>>>>>> 5ad708bdca095b3e020d943d5e24b9dc06fece0d
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +38,6 @@ nav {
             padding: 5px;
             border-radius: 10px;
             position: absolute;
-<<<<<<< HEAD
             top: 50%;left: 80px;
             transform: translateY(-50%) translateX(-50%);
             transition: 0.3s;
@@ -54,17 +48,6 @@ nav {
         &:hover:before{
             opacity: 1;
             transform: translateY(-50%) translateX(0);
-=======
-            top: 30%;
-            left: 80px;
-            transition: 0.25s;
-            transform: scaleX(0);
-            transform-origin: left;
-        }
-
-        &:hover:before {
-            transform: scaleX(1);
->>>>>>> 5ad708bdca095b3e020d943d5e24b9dc06fece0d
         }
 
         &.home:before {
@@ -128,15 +111,9 @@ nav {
         }
 
         a {
-<<<<<<< HEAD
             &::before{
                 top: 120%;left: 50%;
                 transform: translateX(-50%) translateY(-50%);
-=======
-            &::before {
-                top: 50%;
-                left: -20%;
->>>>>>> 5ad708bdca095b3e020d943d5e24b9dc06fece0d
                 transition: 0.3s;
                 opacity: 0;
                 transform-origin: top;

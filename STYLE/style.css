@@ -111,12 +111,12 @@ main #ImageList img {
   margin: 0;
 }
 
-@media screen and (max-width: 500px) {
-  div.container img:not(.download) {
-    float: none;
-    width: 100%;
-    height: auto;
-    margin: 0;
+@media screen and (max-width: 600px) {
+  div.container img {
+    float: none !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
     transition: 0.3s;
   }
 }
@@ -126,7 +126,8 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 50%; /*keep proportionality*/
+  padding-top: 50%;
+  /*keep proportionality*/
   position: relative;
   z-index: 98;
   background-image: url(../Images/Room.jpg);
@@ -218,7 +219,7 @@ nav img:hover {
     flex-direction: row;
     padding: 0 15px;
     width: auto;
-    height: 70px;
+    height: 65px;
     top: 5%;
     left: 5%;
     opacity: 1;
