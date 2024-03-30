@@ -1,6 +1,6 @@
 pages:
   stage: deploy
-  scrypt:
+  script:
   - mkdir .public
   - cp -r * .public
   - mv .public public
