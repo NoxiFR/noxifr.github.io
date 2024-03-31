@@ -46,6 +46,7 @@ div {
                 &.complete {
                     position: absolute;
                     top: 0;
+                    width: 5.5px;
                     left: 50%;
                     transform: translateX(-50%);
                 }

@@ -33,7 +33,6 @@ main {
 main h2 {
   text-align: center;
   margin-bottom: 50px;
-  flex-basis: 100%;
   text-shadow: -1px 1px 2px black;
 }
 main div {
@@ -65,7 +64,7 @@ main div.container.visible {
 main div.container p {
   text-align: justify;
 }
-main div.container img:not(.download) {
+main div.container img:not(.download, .pres) {
   transition: 0.3s;
   width: 40%;
   border-radius: 10px;
@@ -268,10 +267,64 @@ div.presentation {
   background-position: 0 -200px;
   background-color: rgb(51, 61, 96);
 }
+div.presentation h2 {
+  margin: 0;
+}
+div.presentation div:not(.container) {
+  box-shadow: none;
+  padding: 0;
+  width: 100%;
+}
+div.presentation div:not(.container) ul {
+  list-style: none;
+  padding: 0;
+}
+div.presentation div:not(.container) ul li {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr 10fr;
+  gap: 10px;
+  align-items: center;
+}
+div.presentation div:not(.container) ul img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+div.presentation div.progressBar {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  position: relative;
+}
+div.presentation div.progressBar span {
+  position: absolute;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+}
+div.presentation div.progressBar span#python {
+  width: 70%;
+}
+div.presentation div.progressBar span#html {
+  width: 90%;
+}
+div.presentation div.progressBar span#css {
+  width: 70%;
+}
+div.presentation div.progressBar span#java {
+  width: 50%;
+}
+div.presentation div.progressBar span#react {
+  width: 50%;
+}
 
-img.cadre {
-  float: left;
-  margin: 0 30px 10px 0;
+img.pres {
+  width: 20%;
 }
 
 div.space {
@@ -322,6 +375,7 @@ div.frise div.line {
 div.frise div.line.complete {
   position: absolute;
   top: 0;
+  width: 5.5px;
   left: 50%;
   transform: translateX(-50%);
 }
