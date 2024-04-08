@@ -284,9 +284,8 @@ div.presentation div:not(.container) ul li p {
   text-indent: 0;
 }
 div.presentation div:not(.container) ul img {
-  width: 40px;
-  height: 40px;
-  border-radius: 100px;
+  width: 40px !important;
+  height: 40px !important;
 }
 div.presentation div.progressBar {
   width: 100%;
@@ -315,13 +314,19 @@ div.presentation div.progressBar span#css {
   background-color: rgba(55, 163, 252, 0.822);
 }
 div.presentation div.progressBar span#java {
-  width: 50%;
+  width: 60%;
 }
 div.presentation div.progressBar span#react {
   width: 50%;
   background-color: rgba(55, 229, 252, 0.822);
 }
 
+@media screen and (max-width: 600px) {
+  div:not(.container) li p {
+    -moz-column-span: 3;
+         column-span: 3;
+  }
+}
 div.space {
   z-index: 93;
   background-image: url(../Images/SpaceBack.png);

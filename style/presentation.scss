@@ -31,9 +31,8 @@ div.presentation {
                 }
 
                 img {
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 100px;
+                    width: 40px !important;
+                    height: 40px !important;
                 }
             }
         }
@@ -68,13 +67,23 @@ div.presentation {
                 }
 
                 &#java {
-                    width: 50%;
+                    width: 60%;
                 }
 
                 &#react {
                     width: 50%;
                     background-color: rgba(55, 229, 252, 0.822);
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    div:not(.container) {
+        li {
+            p {
+                column-span: 3;
             }
         }
     }
