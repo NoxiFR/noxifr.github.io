@@ -49,7 +49,6 @@ main div.container {
   background-color: rgba(255, 255, 255, 0.05);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  border: solid 1px rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   margin: auto;
   opacity: 0;
@@ -213,7 +212,7 @@ nav img:hover {
   transform: translateX(2px);
 }
 
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 600px) {
   nav {
     flex-direction: row;
     padding: 0 15px;
@@ -256,19 +255,14 @@ div.ndc1 {
   background-color: rgb(8, 6, 11);
 }
 
-img.ndc {
-  float: left;
-  margin: 0 30px 10px 0;
-}
-
 div.presentation {
   z-index: 97;
   background-image: url(../Images/fond-3d-cubes-blancs.png);
   background-position: 0 -200px;
   background-color: rgb(51, 61, 96);
 }
-div.presentation h2 {
-  margin: 0;
+div.presentation img.pres {
+  width: 30%;
 }
 div.presentation div:not(.container) {
   box-shadow: none;
@@ -285,6 +279,9 @@ div.presentation div:not(.container) ul li {
   grid-template-columns: 1fr 4fr 10fr;
   gap: 10px;
   align-items: center;
+}
+div.presentation div:not(.container) ul li p {
+  text-indent: 0;
 }
 div.presentation div:not(.container) ul img {
   width: 40px;
@@ -303,7 +300,6 @@ div.presentation div.progressBar span {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
-  transition: 0.5s;
   top: 0;
   left: 0;
 }
@@ -312,19 +308,18 @@ div.presentation div.progressBar span#python {
 }
 div.presentation div.progressBar span#html {
   width: 90%;
+  background-color: rgba(252, 108, 36, 0.849);
 }
 div.presentation div.progressBar span#css {
   width: 70%;
+  background-color: rgba(55, 163, 252, 0.822);
 }
 div.presentation div.progressBar span#java {
   width: 50%;
 }
 div.presentation div.progressBar span#react {
   width: 50%;
-}
-
-img.pres {
-  width: 20%;
+  background-color: rgba(55, 229, 252, 0.822);
 }
 
 div.space {
@@ -344,6 +339,7 @@ div.frise {
 }
 div.frise img {
   align-self: center;
+  width: 150px !important;
 }
 div.frise div {
   box-shadow: none;
@@ -399,11 +395,6 @@ div.frise div.desc.g {
 }
 div.frise div.desc.g h2 {
   text-align: left;
-}
-
-img.ordi {
-  float: right;
-  margin: 0 0 10px 30px;
 }
 
 ::-webkit-scrollbar {

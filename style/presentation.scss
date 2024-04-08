@@ -4,8 +4,8 @@ div.presentation {
     background-position: 0 -200px;
     background-color: rgb(51, 61, 96);
 
-    h2 {
-        margin: 0;
+    img.pres {
+        width: 30%;
     }
 
     div {
@@ -24,6 +24,10 @@ div.presentation {
                     grid-template-columns: 1fr 4fr 10fr;
                     gap: 10px;
                     align-items: center;
+
+                    p {
+                        text-indent: 0;
+                    }
                 }
 
                 img {
@@ -46,7 +50,6 @@ div.presentation {
                 height: 100%;
                 background-color: rgba(255, 255, 255, 0.5);
                 border-radius: 10px;
-                transition: 0.5s;
                 top: 0;
                 left: 0;
 
@@ -56,10 +59,12 @@ div.presentation {
 
                 &#html {
                     width: 90%;
+                    background-color: rgba(252, 108, 36, 0.849);
                 }
 
                 &#css {
                     width: 70%;
+                    background-color: rgba(55, 163, 252, 0.822);
                 }
 
                 &#java {
@@ -68,14 +73,9 @@ div.presentation {
 
                 &#react {
                     width: 50%;
+                    background-color: rgba(55, 229, 252, 0.822);
                 }
             }
         }
-    }
-}
-
-img {
-    &.pres {
-        width: 20%;
     }
 }

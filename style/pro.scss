@@ -12,6 +12,7 @@ div {
 
         img {
             align-self: center;
+            width: 150px !important;
         }
 
         div {
@@ -81,9 +82,4 @@ div {
             }
         }
     }
-}
-
-img.ordi {
-    float: right;
-    margin: 0 0 10px 30px;
 }
