@@ -63,7 +63,7 @@ main div.container.visible {
 main div.container p {
   text-align: justify;
 }
-main div.container img:not(.download, .pres) {
+main div.container img:not(.language, .pres) {
   transition: 0.3s;
   width: 40%;
   border-radius: 10px;
@@ -76,19 +76,13 @@ main div.container img.left {
   float: left;
   margin: 0 30px 10px 0;
 }
-main div.container img.download {
-  width: 100%;
-}
 main ol li {
   margin: 10px 0;
 }
-main a.download {
+main img.language {
   width: 35px;
   float: right;
   transition: 0.3s;
-}
-main a.download:hover {
-  transform: scale(105%);
 }
 main #ImageList {
   display: flex;

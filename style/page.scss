@@ -54,29 +54,12 @@ main {
                     float: left;
                     margin: 0 30px 10px 0;
                 }
-
-                &.download {
-                    width: 100%;
-                }
             }
         }
     }
 
     ol li {
         margin: 10px 0;
-    }
-
-    a {
-        &.download {
-            width: 35px;
-            float: right;
-            transition: 0.3s;
-
-            &:hover {
-                transform: scale(105%);
-            }
-        }
-
     }
 
     #ImageList {
@@ -104,7 +87,7 @@ main {
 
 @media screen and (max-width:600px) {
     div.container{
-        img {
+        img:not() {
             float: none !important;
             width: 100% !important;
             height: auto !important;
