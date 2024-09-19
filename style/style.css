@@ -1,14 +1,3 @@
-div.imb {
-  z-index: 94;
-  background-image: url(../Images/imbBack.jpg);
-  background-repeat: repeat;
-}
-
-div.ibm2 {
-  z-index: 93;
-  background-color: rgb(8, 6, 11);
-}
-
 html {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
@@ -63,7 +52,7 @@ main div.container.visible {
 main div.container p {
   text-align: justify;
 }
-main div.container img:not(.language, .pres) {
+main div.container img:not(.pres) {
   transition: 0.3s;
   width: 40%;
   border-radius: 10px;
@@ -78,11 +67,6 @@ main div.container img.left {
 }
 main ol li {
   margin: 10px 0;
-}
-main img.language {
-  width: 35px;
-  float: right;
-  transition: 0.3s;
 }
 main #ImageList {
   display: flex;
@@ -104,12 +88,12 @@ main #ImageList img {
 }
 
 @media screen and (max-width: 600px) {
-  div.container img {
-    float: none !important;
-    width: 100% !important;
-    height: auto !important;
-    margin: 0 !important;
-    transition: 0.3s;
+  div.container {
+    img-float: none !important;
+    img-width: 100% !important;
+    img-height: auto !important;
+    img-margin: 0 !important;
+    img-transition: 0.3s;
   }
 }
 header {
@@ -184,14 +168,8 @@ nav a.home:before {
 nav a.space:before {
   content: "Space Invader";
 }
-nav a.imb:before {
-  content: "Site IMB";
-}
 nav a.ndc:before {
   content: "Nuit Du Code";
-}
-nav a.portfolio:before {
-  content: "Portfolio";
 }
 nav a.contact:before {
   content: "Contact";
@@ -300,15 +278,11 @@ div.presentation div.progressBar span#python {
   width: 70%;
 }
 div.presentation div.progressBar span#html {
-  width: 90%;
+  width: 70%;
   background-color: rgba(252, 108, 36, 0.849);
 }
-div.presentation div.progressBar span#css {
-  width: 70%;
-  background-color: rgba(55, 163, 252, 0.822);
-}
 div.presentation div.progressBar span#java {
-  width: 60%;
+  width: 65%;
 }
 div.presentation div.progressBar span#react {
   width: 50%;
@@ -358,7 +332,6 @@ div.frise div.circle {
   border-radius: 50%;
   background-color: rgb(220, 220, 220);
   overflow: hidden;
-  padding-bottom: auto;
 }
 div.frise div.line {
   grid-column-start: 2;

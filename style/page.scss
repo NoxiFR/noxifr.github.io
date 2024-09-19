@@ -39,7 +39,7 @@ main {
             }
 
             img {
-                &:not(.download, .pres) {
+                &:not(.pres) {
                     transition: 0.3s;
                     width: 40%;
                     border-radius: 10px;
@@ -87,7 +87,7 @@ main {
 
 @media screen and (max-width:600px) {
     div.container{
-        img:not() {
+        img: {
             float: none !important;
             width: 100% !important;
             height: auto !important;
