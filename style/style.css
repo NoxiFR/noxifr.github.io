@@ -166,7 +166,7 @@ nav a.home:before {
   content: "Accueil";
 }
 nav a.space:before {
-  content: "Space Invader";
+  content: "Space Shooter";
 }
 nav a.ndc:before {
   content: "Nuit Du Code";
