@@ -281,6 +281,10 @@ div.presentation div.progressBar span#html {
   width: 70%;
   background-color: rgba(252, 108, 36, 0.849);
 }
+div.presentation div.progressBar span#cpp {
+  width: 25%;
+  background-color: rgba(55, 163, 252, 0.822);
+}
 div.presentation div.progressBar span#java {
   width: 65%;
 }
