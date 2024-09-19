@@ -276,6 +276,7 @@ div.presentation div.progressBar span {
 }
 div.presentation div.progressBar span#python {
   width: 70%;
+  background-color: #fcfc33;
 }
 div.presentation div.progressBar span#html {
   width: 70%;
@@ -287,6 +288,7 @@ div.presentation div.progressBar span#cpp {
 }
 div.presentation div.progressBar span#java {
   width: 65%;
+  background-color: #e06464;
 }
 div.presentation div.progressBar span#react {
   width: 50%;
